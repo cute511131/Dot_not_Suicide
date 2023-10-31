@@ -1,0 +1,625 @@
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>首頁 | 饗 A Joy</title>
+    <meta name="author" content="饗賓餐旅股份有限公司">
+    <meta name="keywords" content="">
+    <meta name="description" content="世界馳名極品珍饌 遇見在地匠心食藝 島嶼絕美山海四境 遇見台灣獨獻盛宴">
+    <meta name="robots" content="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <meta property="og:title" content="首頁 | 饗  A Joy">
+    <meta property="og:description" content="世界馳名極品珍饌 遇見在地匠心食藝 島嶼絕美山海四境 遇見台灣獨獻盛宴">
+    <meta property="og:image" content="https://www.ajoy.com.tw/template/images/common/ajoy-og-img.jpg">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <link rel="stylesheet" href="css2.css">
+    <link rel="stylesheet" href="ak_reset.min.css">
+    <link rel="stylesheet" href="ak_default.min.css">
+    <link rel="stylesheet" href="fontawesome-6.4.0.min.css">
+    <script src="https://www.ajoy.com.tw/template/js/lodash.min.js"></script>
+    <script src="https://www.ajoy.com.tw/template/js/jquery-3.6.4.min.js"></script>
+    <script src="https://www.ajoy.com.tw/template/js/jquery-ui.min.js"></script>
+    <script src="https://www.ajoy.com.tw/template/js/aos.js"></script>
+    <script src="https://www.ajoy.com.tw/template/js/ak_init.min.js?t=230914"></script>
+    <script src="/template/js/createjs.min.js"></script>
+    <script src="/template/js/230517_logo-animation-combine.js"></script>
+    <script src="/template/js/ak_index.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZX8FLRN7JC"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-ZX8FLRN7JC'); </script>
+</head>
+
+<body class="" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    <audio src="/template/video/ajoy-bgm.mp3?v=20230704" loop="" id="music"></audio>
+
+    <main class="main-content">
+
+
+        <section class="sound-choice full-screen" style="--vh: 9.31px">
+            <video width="640" height="360" poster="./HC_transformed.png" loop=""
+                autoplay="" playsinline="" muted="" preload="">
+                <source src="/template/video/bg-video.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+
+
+            <div class="sound-animate ">
+                <div class="canvas-block">
+                    <div id="animation_container" style="opacity: 1; width: 474px; height: 538px; display: none;">
+                        <canvas id="canvas" width="474" height="538" style="width: 474px; height: 538px;"></canvas>
+                        <div id="dom_overlay_container" style="width: 474px; height: 538px;"></div>
+                    </div>
+
+                    <div class="ajoy-conatainer" id="ajoy-conatainer">
+                        <div class="text-mask is-animated-end" id="text-mask" style="opacity: 1;">
+                            <img src="/template/images/common/ci/ajoy-logo-hexa-bg.svg" alt="">
+                        </div>
+                        <div class="text-a aj-text is-animated is-animated-end" style="opacity: 1;">
+                            <img src="/template/images/common/ci/ajoy-logo_a_golden.svg" alt=""
+                                class="golden hidden-img">
+                            <img src="/template/images/common/ci/ajoy-logo_a_black.svg" alt="" class="black hidden-img">
+                            <img src="/template/images/common/ci/ajoy-logo_a_white.svg" alt=""
+                                class="white show-img is-hidden">
+                        </div>
+                        <div class="text-j aj-text is-animated is-animated-end" style="opacity: 1;">
+                            <img src="/template/images/common/ci/ajoy-logo_j_golden.svg" alt=""
+                                class="golden hidden-img">
+                            <img src="/template/images/common/ci/ajoy-logo_j_black.svg" alt="" class="black hidden-img">
+                            <img src="/template/images/common/ci/ajoy-logo_j_white.svg" alt=""
+                                class="white show-img is-hidden">
+                        </div>
+                        <div class="text-o aj-text is-animated is-animated-end" style="opacity: 1;">
+                            <img src="/template/images/common/ci/ajoy-logo_o_golden.svg" alt=""
+                                class="golden hidden-img">
+                            <img src="/template/images/common/ci/ajoy-logo_o_black.svg" alt="" class="black hidden-img">
+                            <img src="/template/images/common/ci/ajoy-logo_o_white.svg" alt=""
+                                class="white show-img is-hidden">
+                        </div>
+                        <div class="text-y aj-text is-animated is-animated-end" style="opacity: 1;">
+                            <img src="/template/images/common/ci/ajoy-logo_y_golden.svg" alt=""
+                                class="golden hidden-img">
+                            <img src="/template/images/common/ci/ajoy-logo_y_black.svg" alt="" class="black hidden-img">
+                            <img src="/template/images/common/ci/ajoy-logo_y_white.svg" alt=""
+                                class="white show-img is-hidden">
+                        </div>
+                        <div class="text-logo is-animated is-animated-end">
+                            <img src="/template/images/common/ci/ajoy-logo_golden.svg" alt="">
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="switch-container is-animated end-animated" id="switch-container" style="opacity: 1;">
+                    <div class="sound">SOUND</div>
+                    <div class="flex-block switcher">
+                        <div class="on-sound font-22" id="on-sound">ON <span></span></div>
+                        <div class="off-sound font-22" id="off-sound">OFF <span></span></div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="text-symbol" id="text-symbol">
+                <img src="/template/images/common/ci/ajoy-hexa-static.svg" alt="">
+            </div>
+            <div class="font-22 hidden" id="world" style="display: block;">
+                <img src="/template/images/index/start-of-page/ajoy-taiwan.svg" alt="">
+            </div>
+            <div class="font-22 hidden" id="serendipity" style="display: block;">
+                <img src="/template/images/index/start-of-page/ajoy-letter.svg" alt="">
+            </div>
+            <div class="font-22 hidden is-animated" id="scroll-down" style="display: none;">SCROLL</div>
+
+        </section>
+
+        <div class="page-main" id="page-main">
+            <div class="container-fluid no-background no-scrolled" id="header-block">
+
+                <div class="header-container">
+
+
+                    <nav class="navbar navbar-default" role="navigation">
+                        <span class="buger-toggler hidden-pc" id="m-menu-hamb">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </span>
+
+                        <div class="main-navbar" id="menu-list" style="">
+                            <div class="reservation-meeting hidden-pc reserve-now">
+                                <a href="https://www.feastogether.com.tw/booking/Ajoy" target="_blank"
+                                    rel="noopener noreferrer" class="">
+                                    <span class="font-17">訂位<br> 相遇 </span>
+                                    <span class="white-line is-animated"></span>
+                                    <span class="arrow"></span>
+                                </a>
+                            </div>
+                            <ul class="navbar-nav header-menu no-ul" id="header-menu">
+                                <li class="lv2-drop">
+                                    <a href="/zh-TW/about" class="menu-drop lv2-toggle font-15">遇見饗</a>
+                                </li>
+                                <li class="lv2-drop">
+                                    <a href="/zh-TW/menu" class="menu-drop lv2-toggle font-15">饗美饌</a>
+                                </li>
+                                <li class="lv2-drop">
+                                    <a href="/zh-TW/news" class="menu-drop lv2-toggle font-15">新訊消息</a>
+                                </li>
+                                <li class="lv2-drop">
+                                    <a href="/zh-TW/blog" class="menu-drop lv2-toggle font-15">專欄特輯</a>
+                                </li>
+                                <li class="lv2-drop">
+                                    <a href="/zh-TW/panoramic" class="menu-drop lv2-toggle font-15"> 360˚ 環景</a>
+                                </li>
+                                <li class="lv2-drop hidden-pc header-lang-title-m">
+                                    <span class="menu-drop lv2-toggle font-15">
+                                        Language </span>
+                                    <div class="flex-block language-list" style="">
+                                        <a href="/zh-TW">繁體中文</a>
+                                        <a href="/en-global">English</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                            <ul class="no-ul extra-link hidden-pc flex-block">
+                                <li class="hover-article-animate voice-controller hidden-pc">
+                                    <div class="play-music hover-item"><span class="font-17">ON</span></div>
+                                    <div class="off-music hover-item"><span class="font-17">OFF</span></div>
+                                </li>
+                            </ul>
+
+
+                        </div>
+
+                    </nav>
+                    <a class="navbar-brand is-animated is-animated-end" href="/zh-TW" id="navbar-brand">
+                        <div class="logo-a">
+                            <img src="/template/images/common/ci/ajoy-logo_a_white.svg" alt="">
+                        </div>
+                        <div class="logo-j">
+                            <img src="/template/images/common/ci/ajoy-logo_j_white.svg" alt="">
+                        </div>
+                        <div class="logo-o">
+                            <img src="/template/images/common/ci/ajoy-logo_o_white.svg" alt="">
+                        </div>
+                        <div class="logo-y">
+                            <img src="/template/images/common/ci/ajoy-logo_y_white.svg" alt="">
+                        </div>
+                    </a>
+                    <nav class="icon-group">
+                        <ul class="no-ul right-icon-list">
+                            <li class="voice-controller hidden-tb hover-article-animate" id="voice-controller" style="">
+                                <div class="play-music hover-item"><span class="font-15">ON</span></div>
+                                <div class="off-music hover-item"><span class="font-15">OFF</span></div>
+                            </li>
+                            <li class="header-lang-title hidden-tb" id="header-lang-title">
+                                <p class="font-15">Language</p>
+
+                                <ul class="no-ul lang-list">
+                                    <li>
+                                        <a href="/zh-TW" title="繁體中文" class="font-15">
+                                            繁體中文</a>
+                                    </li>
+                                    <li>
+                                        <a href="/en-global" title="English" class="font-15">
+                                            English</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="reservation hidden-pc">
+                                <a href="https://www.feastogether.com.tw/booking/Ajoy" target="_blank"
+                                    rel="noopener noreferrer"></a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="reservation-meeting" id="reservation-meeting">
+                <a href="https://www.feastogether.com.tw/booking/Ajoy" target="_blank" rel="noopener noreferrer">
+                    <span class="font-17">訂位<br> 相遇 </span>
+                    <span class="white-line is-animated"></span>
+                    <span class="arrow"></span>
+                </a>
+            </div>
+            <section class="intro-kv full-screen" id="intro-kv" style="--vh: 9.31px">
+                <video width="640" height="360" loop="" playsinline="" autoplay="" muted="" preload=""
+                    poster="/upload/media/index/kv/index-kv-video.jpg">
+                    <source src="/upload/media/video/AJoy_rice_30s_720p_nocc.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+                <div class="video-mask"></div>
+                <div class="inro-article">
+                    <div class="top is-animated" id="kv-intro" style="opacity: 1;">
+                        這是來自有情台灣<br>寫給世界的一封美味情書 <div class="white-line is-animated"></div>
+                    </div>
+                    <div class="bottom" id="kv-intro2" style="opacity: 1;"> 邀請你，也邀請世界<br>
+                        <img src="/template/images/index/kv-intro/ajoy-intro-article.svg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="brand-info " id="brand-info">
+                <div class="grid-container" id="brand-anchor">
+                    <div class="img-content left-img aos-init" data-aos="brands-left" data-aos-anchor="#brand-anchor">
+
+                        <img class="inner-image" src="/template/images/index/intro-brand/ajoy-intro-brand-left.jpg">
+
+                    </div>
+                    <div class="sum-up aos-init" data-aos="article-move" data-aos-anchor="#brand-anchor">
+                        <p class="font-22 bold"> 世界與台灣再相遇</p>
+                        <p> 世界馳名極品珍饌 遇見在地匠心食藝<br>島嶼絕美山海四境 遇見台灣獨獻盛宴</p>
+                        <p> 邀你身入其境 奢享雲頂高空宴饗<br>究極和食 歐陸美饌 與台灣情味交融薈萃<br>「著時」在地食材 捎來四時春分雨露<br>優雅人文食器點綴品味 藝術跨界 呈獻美不勝收</p>
+                        <div class="hidden-m">
+                            <p> 飲宴創意紛呈 令味蕾驚嘆不已<br>這是來自有情台灣<br>寫給世界的一封美味情書 </p>
+                            <p> 邀請你 也邀請世界<br>饗用台灣 美好之最<br>A Joy</p>
+                        </div>
+                    </div>
+                    <div class="show-m sum-up-p2 aos-init" data-aos="article-move" data-aos-anchor="#brand-anchor">
+                        <p> 飲宴創意紛呈 令味蕾驚嘆不已<br>這是來自有情台灣<br>寫給世界的一封美味情書 </p>
+                        <p> 邀請你 也邀請世界<br>饗用台灣 美好之最<br>A Joy</p>
+                    </div>
+                    <div class="img-content right-img aos-init" data-aos="brands-right" data-aos-anchor="#brand-anchor">
+                        <picture>
+                            <source media="(min-width: 768px)"
+                                srcset="/template/images/index/intro-brand/ajoy-intro-brand-right.jpg">
+                            <source media="(max-width: 767px)"
+                                srcset="/template/images/index/intro-brand/ajoy-intro-brand-right-mb.jpg">
+                            <img class="inner-image"
+                                src="/template/images/index/intro-brand/ajoy-intro-brand-right.jpg">
+                        </picture>
+
+
+                    </div>
+                    <div class="mask aos-init" data-aos="mask-move" data-aos-anchor="#brand-anchor">
+                        <img class="" src="/template/images/index/intro-brand/ajoy-mask-gradient.png">
+                    </div>
+                    <div class="trans-word aos-init" data-aos="title-top" data-aos-anchor="#brand-anchor">
+                        <img class="" src="/template/images/index/intro-brand/ajoy-about-us.svg">
+                    </div>
+                </div>
+            </section>
+            <section class="sitemap" id="sitemap">
+
+                <div class="video-container">
+                    <video id="canvas_video" class="video hidden-m" width="640" height="360" playsinline="" muted=""
+                        preload="">
+                        <source src="/template/video/ajoy-ci-separate.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <video id="canvas_video_m" class="video show-m" width="640" height="360" playsinline="" muted=""
+                        preload="">
+                        <source src="/template/video/ajoy-ci-separate-mb.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                </div>
+                <div class="brand sitemap-link">
+                    <a href="/zh-TW/about" class="bg">
+                        <div class="show-aritcle font-22">
+                            遇見饗 </div>
+                    </a>
+                    <div class="mask"></div>
+
+                </div>
+                <div class="news sitemap-link">
+                    <a href="/zh-TW/news" class="bg">
+                        <div class="show-aritcle font-22">
+                            新訊消息 </div>
+                    </a>
+                    <div class="mask"></div>
+
+                </div>
+                <div class="blog sitemap-link">
+                    <a href="/zh-TW/blog" class="bg">
+                        <div class="show-aritcle font-22">
+                            專欄特輯 </div>
+                    </a>
+                    <div class="mask"></div>
+
+                </div>
+                <div class="meal sitemap-link">
+                    <a href="/zh-TW/menu" class="bg">
+                        <div class="show-aritcle font-22">
+                            饗美饌 </div>
+                    </a>
+                    <div class="mask"></div>
+
+                </div>
+            </section>
+
+            <section class="sections-news">
+                <div class="grid-container">
+                    <div class="title">ENJOY THE<br>JOURNEY</div>
+                    <div class="news-container">
+                        <div class="news-content aos-init" data-aos="scale-animate">
+                            <a href="https://www.ajoy.com.tw/zh-TW/about/index"
+                                style="background-image: url('/upload/media/index/journey/ajoy-news1-1.jpg');"
+                                data-aos="scale-img-animate" class="aos-init">
+                            </a>
+                            <div class="mask"></div>
+                            <div class="pattern"></div>
+                            <div class="arrow"></div>
+
+                        </div>
+                        <div class="news-content aos-init" data-aos="scale-animate">
+                            <a href="https://www.ajoy.com.tw/zh-TW/blog/index"
+                                style="background-image: url('/upload/media/index/journey/ajoy-news1-2.jpg');"
+                                data-aos="scale-img-animate" class="aos-init">
+                            </a>
+                            <div class="mask"></div>
+                            <div class="pattern"></div>
+                            <div class="arrow"></div>
+
+                        </div>
+                        <div class="news-content aos-init" data-aos="scale-animate">
+                            <a href="https://www.ajoy.com.tw/zh-TW/menu/index"
+                                style="background-image: url('/upload/media/index/journey/ajoy-news1-3.jpg');"
+                                data-aos="scale-img-animate" class="aos-init">
+                            </a>
+                            <div class="mask"></div>
+                            <div class="pattern"></div>
+                            <div class="arrow"></div>
+
+                        </div>
+                        <div class="news-content aos-init" data-aos="scale-animate">
+                            <a href="https://www.ajoy.com.tw/zh-TW/news/index"
+                                style="background-image: url('/upload/media/index/journey/ajoy-news1-4.jpg');"
+                                data-aos="scale-img-animate" class="aos-init">
+                            </a>
+                            <div class="mask"></div>
+                            <div class="pattern"></div>
+                            <div class="arrow"></div>
+
+                        </div>
+                        <div class="news-content aos-init" data-aos="scale-animate">
+                            <a href="https://www.ajoy.com.tw/zh-TW/news/index"
+                                style="background-image: url('/upload/media/index/journey/ajoy-news2-1.jpg');"
+                                data-aos="scale-img-animate" class="aos-init">
+                            </a>
+                            <div class="mask"></div>
+                            <div class="pattern"></div>
+                            <div class="arrow"></div>
+
+                        </div>
+                        <div class="news-content aos-init" data-aos="scale-animate">
+                            <a href="https://www.ajoy.com.tw/zh-TW/about/index"
+                                style="background-image: url('/upload/media/index/journey/ajoy-news2-2.jpg');"
+                                data-aos="scale-img-animate" class="aos-init">
+                            </a>
+                            <div class="mask"></div>
+                            <div class="pattern"></div>
+                            <div class="arrow"></div>
+
+                        </div>
+                        <div class="news-content aos-init" data-aos="scale-animate">
+                            <a href="https://www.ajoy.com.tw/zh-TW/blog/index"
+                                style="background-image: url('/upload/media/index/journey/ajoy-news2-3.jpg');"
+                                data-aos="scale-img-animate" class="aos-init">
+                            </a>
+                            <div class="mask"></div>
+                            <div class="pattern"></div>
+                            <div class="arrow"></div>
+
+                        </div>
+                        <div class="news-content aos-init" data-aos="scale-animate">
+                            <a href="https://www.ajoy.com.tw/zh-TW/menu/index"
+                                style="background-image: url('/upload/media/index/journey/ajoy-news2-4.jpg');"
+                                data-aos="scale-img-animate" class="aos-init">
+                            </a>
+                            <div class="mask"></div>
+                            <div class="pattern"></div>
+                            <div class="arrow"></div>
+
+                        </div>
+                        <div class="news-content aos-init" data-aos="scale-animate">
+                            <a href="https://www.ajoy.com.tw/zh-TW/menu/index"
+                                style="background-image: url('/upload/media/index/journey/ajoy-news3-1.jpg');"
+                                data-aos="scale-img-animate" class="aos-init">
+                            </a>
+                            <div class="mask"></div>
+                            <div class="pattern"></div>
+                            <div class="arrow"></div>
+
+                        </div>
+                        <div class="news-content aos-init" data-aos="scale-animate">
+                            <a href="https://www.ajoy.com.tw/zh-TW/news/index"
+                                style="background-image: url('/upload/media/index/journey/ajoy-news3-2.jpg');"
+                                data-aos="scale-img-animate" class="aos-init">
+                            </a>
+                            <div class="mask"></div>
+                            <div class="pattern"></div>
+                            <div class="arrow"></div>
+
+                        </div>
+                        <div class="news-content aos-init" data-aos="scale-animate">
+                            <a href="https://www.ajoy.com.tw/zh-TW/about/index"
+                                style="background-image: url('/upload/media/index/journey/ajoy-news3-3.jpg');"
+                                data-aos="scale-img-animate" class="aos-init">
+                            </a>
+                            <div class="mask"></div>
+                            <div class="pattern"></div>
+                            <div class="arrow"></div>
+
+                        </div>
+                        <div class="news-content aos-init" data-aos="scale-animate">
+                            <a href="https://www.ajoy.com.tw/zh-TW/blog/index"
+                                style="background-image: url('/upload/media/index/journey/ajoy-news3-4.jpg');"
+                                data-aos="scale-img-animate" class="aos-init">
+                            </a>
+                            <div class="mask"></div>
+                            <div class="pattern"></div>
+                            <div class="arrow"></div>
+
+                        </div>
+                        <div class="news-content aos-init" data-aos="scale-animate">
+                            <a href="https://www.ajoy.com.tw/zh-TW/blog/index"
+                                style="background-image: url('/upload/media/index/journey/ajoy-news4-1.jpg');"
+                                data-aos="scale-img-animate" class="aos-init">
+                            </a>
+                            <div class="mask"></div>
+                            <div class="pattern"></div>
+                            <div class="arrow"></div>
+
+                        </div>
+                        <div class="news-content aos-init" data-aos="scale-animate">
+                            <a href="https://www.ajoy.com.tw/zh-TW/menu/index"
+                                style="background-image: url('/upload/media/index/journey/ajoy-news4-2.jpg');"
+                                data-aos="scale-img-animate" class="aos-init">
+                            </a>
+                            <div class="mask"></div>
+                            <div class="pattern"></div>
+                            <div class="arrow"></div>
+
+                        </div>
+                        <div class="news-content aos-init" data-aos="scale-animate">
+                            <a href="https://www.ajoy.com.tw/zh-TW/news/index"
+                                style="background-image: url('/upload/media/index/journey/ajoy-news4-3.jpg');"
+                                data-aos="scale-img-animate" class="aos-init">
+                            </a>
+                            <div class="mask"></div>
+                            <div class="pattern"></div>
+                            <div class="arrow"></div>
+
+                        </div>
+                        <div class="news-content aos-init" data-aos="scale-animate">
+                            <a href="https://www.ajoy.com.tw/zh-TW/about/index"
+                                style="background-image: url('/upload/media/index/journey/ajoy-news4-4.jpg');"
+                                data-aos="scale-img-animate" class="aos-init">
+                            </a>
+                            <div class="mask"></div>
+                            <div class="pattern"></div>
+                            <div class="arrow"></div>
+
+                        </div>
+
+                    </div>
+                    <div class="mountain">
+                        <img class="" src="/template/images/index/section-news/ajoy-bg-news-mountain.svg">
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer-block" id="footer-area" data-realtivepath="/Verifycode">
+                <div class="footer-container">
+                    <div class="footer-pattern aos-init" data-aos="line-animate" data-aos-offset="150"></div>
+                    <div class="gradient-mask aos-init" data-aos="mask-animate" data-aos-offset="150"></div>
+                    <div class="flex-block top" id="footer-top">
+                        <div class="left-block">
+                            <picture>
+                                <source media="(min-width:1200px)"
+                                    srcset="/template/images/index/section-footer/ajoy-all-enjoy.svg">
+                                <source media="(max-width:767px)"
+                                    srcset="/template/images/index/section-footer/ajoy-logo-m.svg">
+                                <source media="(max-width:1199px)"
+                                    srcset="/template/images/index/section-footer/ajoy-all-enjoy-tb.svg">
+                                <img src="/template/images/index/section-footer/ajoy-all-enjoy.svg" alt=""
+                                    data-aos="all-you-can-animate" data-aos-anchor="#footer-top" data-aos-offset="150"
+                                    class="aos-init">
+                            </picture>
+                            <div class="reservation-meeting-footer aos-init" data-aos="seperendity-animate"
+                                data-aos-anchor="#footer-top" data-aos-offset="150">
+                                <a href="https://www.feastogether.com.tw/booking/Ajoy" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <span class="read-container">
+                                        <span class="read-more font-22 bold">
+                                            訂位相遇 <span class="arrow-container">
+                                                <span class="white-line is-animated"></span>
+                                                <span class="innerarrow"></span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="right-block hidden-m aos-init aos-animate" data-aos="logo-animate"
+                            data-aos-offset="150">
+                            <img src="/template/images/index/section-footer/ajoy-logo.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="footer-down">
+                        <div class="flex-block aos-init" data-aos-anchor="#footer-top" data-aos="icon-animate"
+                            data-aos-offset="150">
+                            <div class="flex-block">
+                                <a href="/zh-TW/contact-us" class="footer-social-icon hover-article-animate">
+                                    <span
+                                        style="background-image: url(/template/images/index/section-footer/ajoy-icon-shop.svg);"></span>
+                                    <span
+                                        style="background-image: url(/template/images/index/section-footer/ajoy-icon-shop-hover.svg);"></span>
+                                    <span class="hover-item"><span class="font-15">聯絡我們</span></span>
+                                </a>
+                                <a href="https://goo.gl/maps/CGG3Rg8gHzqRgurg9" target="_blank"
+                                    rel="noopener noreferrer" class="footer-social-icon hover-article-animate">
+                                    <span
+                                        style="background-image: url(/template/images/index/section-footer/ajoy-icon-location.svg);"></span>
+                                    <span
+                                        style="background-image: url(/template/images/index/section-footer/ajoy-icon-location-hover.svg);"></span>
+                                    <span class="hover-item"><span class="font-15">台北市信義區信義路五段 7 號 86 樓</span></span>
+                                </a>
+
+                                <a href="/zh-TW/contact-us" class="footer-social-icon hidden-m hover-article-animate"
+                                    style="">
+                                    <span
+                                        style="background-image: url(/template/images/index/section-footer/ajoy-icon-phone.svg);"></span>
+                                    <span
+                                        style="background-image: url(/template/images/index/section-footer/ajoy-icon-phone-hover.svg);"></span>
+                                    <span class="hover-item"><span class="font-15">02-81010111</span></span>
+                                </a>
+
+                                <a href="tel:02-81010111" class="footer-social-icon show-m">
+                                    <span
+                                        style="background-image: url(/template/images/index/section-footer/ajoy-icon-phone.svg);"></span>
+                                    <span
+                                        style="background-image: url(/template/images/index/section-footer/ajoy-icon-phone-hover.svg);"></span>
+                                </a>
+                                <a href="https://www.facebook.com/people/饗-A-Joy/100093220665725/?mibextid=LQQJ4d"
+                                    class="footer-social-icon">
+                                    <span
+                                        style="background-image: url(/upload/media/social-media/ajoy-icon-facebook.svg);"></span>
+                                    <span
+                                        style="background-image: url(/upload/media/social-media/ajoy-icon-facebook-hover.svg);"></span>
+                                </a>
+                                <a href="https://www.youtube.com/@Ajoy10186" class="footer-social-icon">
+                                    <span
+                                        style="background-image: url(/upload/media/social-media/ajoy-icon-youtube.svg);"></span>
+                                    <span
+                                        style="background-image: url(/upload/media/social-media/ajoy-icon-youtube-hover.svg);"></span>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="flex-block bottom-container aos-init" data-aos="bottom-animate"
+                    data-aos-anchor="#footer-top" data-aos-offset="150">
+                    <div class="link-container">
+                        <a href="/zh-TW/contact-us#request_form" class="font-15">聯絡我們</a>
+                        <a href="/zh-TW/privacy-policy" class="font-15">隱私權政策</a>
+                        <a href="/zh-TW/food_safe" class="font-15">政府食安規範標示</a>
+                    </div>
+                    <p class="copyright">Copyright © AJoy (79955280) , 2023</p>
+                </div>
+            </footer>
+        </div>
+
+    </main>
+
+
+
+
+    <div id="preloadjs-container"
+        style="visibility: hidden; position: absolute; height: 10px; width: 10px; overflow: hidden; transform: translate(-10px, -10px);">
+    </div>
+</body>
+
+</html>
