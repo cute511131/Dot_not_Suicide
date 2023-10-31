@@ -1,0 +1,1 @@
+field1(年)、field2(總計男)、field3(總計女)、field4(0_11歲男)、field5(0_11歲女)、field6(12_17歲男)、field7(12_17歲女)、field8(18_19歲男)、field9(18_19歲女)、field10(20_29歲男)、field11(20_29歲女)、field12(30_39歲男)、field13(30_39歲女)、field14(40_49歲男)、field15(40_49歲女)、field16(50_59歲男)、field17(50_59歲女)、field18(60歲以上_男)、field19(60歲以上_女)、field20(不詳_男)、field21(不詳_女)
